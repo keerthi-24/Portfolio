@@ -1,0 +1,301 @@
+*{
+    
+    margin:0;
+    box-sizing:border-box;
+}
+
+
+.navbar {
+    display:flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9;
+    
+}
+
+.nav-left{
+    color:white;
+    padding-left:5px;
+    padding-top:20px;
+    font-size:20px;
+}
+.menu{
+    display:none;
+}
+.nav-right a{
+    
+    padding-top:20px;
+    margin-right: 20px;
+    word-spacing:20px;
+    color:white;
+    font-size: 25px;
+}
+/*.Home::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url('../gilles-lambert-pb_lF8VWaPU-unsplash.jpg') no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(7px);
+    transform: scale(1.5);
+    z-index: -1;
+}
+/*.Home{
+    color:white;
+    font-size:20px;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    border:2px solid red;
+    
+}
+.th{
+    height:100vh;
+    border:2px solid blue;
+}*/
+.th {
+    color: #d6d3d1;
+    height: 100vh;
+}
+
+.th::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url('gilles-lambert-pb_lF8VWaPU-unsplash.jpg') no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(7px);
+    transform: scale(1.5);
+    z-index: -1;
+    
+}
+
+.Home {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    
+}
+.hello{
+    margin-bottom:20px;
+    
+}
+.name{
+    margin-top:10px;
+    margin-bottom:20px;
+}
+.me{
+    margin-top:10px;
+}
+.About{
+    text-align:center;
+    padding:70px;
+    font-size: 25px;
+    color:white;
+}
+.prfl{
+    height:300px;
+    width:200px;
+    margin: bottom 6rems;
+}
+.a1{
+    
+    margin: bottom 2rems;
+    font-size: 30px;
+}
+.about{
+    margin-top:10px;
+    margin-bottom:20px;
+    
+}
+.Hobbies{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.hob{
+    margin-top: 10px;
+}
+/*.abt-left{
+    width:50vw;
+
+
+    
+}
+.abt-right{
+    width:50vw;
+    color:white;
+    padding-bottom:50px;
+}
+.prfl{
+    height:300px;
+    width:200px;
+   
+}
+.about{
+    font-size:25px;
+    color:white;
+}
+.ab1{
+     
+}*/
+.Skills{
+    text-align:center;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+    height:100vh;
+    
+}
+.s1{
+    width:33%;
+    height:100px;
+    object-fit: contain;
+    
+    
+}
+
+
+.Projects {
+    text-align: center;
+    padding: 50px;
+    color:white;
+    
+}
+
+.flip-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Wraps cards to the next line if necessary */
+    gap: 50px; /* Adjustsspace between cards */
+}
+.flip-card {
+    
+    width: 200px; /* Width of the flip card */
+    height: 300px; /* Height of the flip card */
+    perspective: 1000px; /* Adds perspective effect */
+    
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+.flip-card-front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flip-card-back {
+    background-color: #2980b9; /* Background color for the back of the card */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    /* Initially hide the back */
+}
+.img1{
+    height:200px;
+    width:200px;
+    
+}
+.img2{
+    height:200px;
+    width:200px;
+}
+.footer {
+   background-color: black;
+    text-align: center;
+     position: relative;
+    bottom: 0;
+    width: 100%;
+   
+  }
+  
+  .Contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: black;
+    color: white;
+    height:5vh;
+  }
+  
+  .email {
+    font-size: 16px;
+  }
+  
+  .icon  {
+    width: 30px;  /* Adjust size of the icon */
+    height: 30px;
+     /* Makes the icon white to stand out on black background */
+  }
+  @media screen and (max-width: 768px){
+    .menu {
+        display: inline;
+      }
+      .nav-left{
+        font-size: medium;
+      }
+      .nav-right {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        top: 5vh;
+        right: 0;
+        
+        
+        /* background-color: bisque; */
+        /* border-radius: 10px; */
+        backdrop-filter: blur(2px);
+        margin: 0;
+      }
+      .section {
+        color: white;
+      }
+      .nav-right a{
+        font-size: 15px;
+      }
+      .flip-cards{
+        gap:20px;
+      }
+      .about{
+        font-size:medium;
+   }
+   .hob{
+     font-size:medium;
+   }
+}
+  @media screen and (max-width: 375px){
+    .nav-left{
+        font-size: small;
+  }
+  .about{
+       font-size:medium;
+  }
+  .hob{
+    font-size:medium;
+  }
+  
+}
